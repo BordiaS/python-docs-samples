@@ -36,5 +36,8 @@ command would run the sample:
 
     python cloudiot_device_manager_example.py \
       --project_id blue-jet-123 \
-      --api_key=YOUR_API_KEY \
+      --pubsub_topic projects/blue-jet-123/topics/device-events \
+      --ec_public_key ../ec_public.pem \
+      --rsa_certificate_file ../rsa_cert.pem \
+      --api_key YOUR_API_KEY \
       --service_account_json $HOME/creds.json
