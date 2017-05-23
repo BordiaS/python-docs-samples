@@ -23,7 +23,15 @@ or by using the helper script in the /scripts folder.
 
     ./generate_keys.sh
 
-6. Connect a sample device using the sample app in the `mqtt_example` folder.
-7. Learn how to manage devices programatically with the sample app in the
+6. Register a device:
+
+    gcloud alpha iot devices create my-python-device \
+        --project=my-iot-project \
+        --region=us-central1 \
+        --registry=my-registry \
+        --public-key path=rsa_cert.pem,type=rs256
+
+7. Connect a sample device using the sample app in the `mqtt_example` folder.
+8. Learn how to manage devices programatically with the sample app in the
 `manager` folder.
 

@@ -37,6 +37,6 @@ how you would execute using the configuration from the MQTT code samples guide:
     python cloudiot_mqtt_example.py \
       --registry_id my-registry \
       --project_id=blue-jet-123 \
-      --device_id my-rs256-device \
+      --device_id my-python-device \
       --algorithm RS256 \
       --private_key_file ../rsa_private.pem
