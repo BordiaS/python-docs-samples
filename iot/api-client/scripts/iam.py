@@ -49,7 +49,8 @@ if __name__ == '__main__':
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 
-    subparsers = parser.add_argument(dest='topic_name',
+    subparsers = parser.add_argument(
+            dest='topic_name',
             help='The PubSub topic to grant Cloud IoT Core access to')
 
     args = parser.parse_args()
